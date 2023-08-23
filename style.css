@@ -37,10 +37,12 @@
    grid-column: 3/4;
    /* grid-row: 3/4; */
 }
+
 .underline
 {
    text-decoration: line-through;
 }
+
 .basic-price h1
 {
    text-align: center;
