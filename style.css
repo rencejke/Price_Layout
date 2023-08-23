@@ -11,13 +11,35 @@
    /* Grids */
    display: grid;
    grid-template-columns: repeat(3, 1fr);
+   /* grid-template-rows: repeat(3, 1fr); */
    place-items: center;
+   /* row-gap: 10px; */
 }
 
-.basic-price,  .premium-price, .ultimate-price
+.basic-price, .premium-price, .ultimate-price 
 {
    background-color: white;
    padding: 150px 100px 150px 100px;
+}
+.basic-price
+{
+   grid-column: 1/2;
+   /* grid-row: 1/2; */
+}
+
+.premium-price
+{
+   grid-column: 2/3;
+   /* grid-row: 2/3; */
+}
+.ultimate-price
+{
+   grid-column: 3/4;
+   /* grid-row: 3/4; */
+}
+.underline
+{
+   text-decoration: line-through;
 }
 .basic-price h1
 {
@@ -29,7 +51,7 @@
    text-align: center;
    font-weight: bolder;
    text-transform: uppercase;
-   border-bottom: 2px solid yellow;
+   border-bottom: 3px solid rgb(0, 140, 255);
    line-height: 0.1em;
    margin: 10px 0px 20px;
 }
@@ -39,8 +61,8 @@
 }
 .basic-price h3 span
 {
-   background:#fff; 
-   padding:0 10px; 
+   background: #fff; 
+   padding: 0 10px; 
 }
  .basic-purchase-button
 {
@@ -52,7 +74,7 @@
    padding: 20px 40px 20px 40px;
    border-radius: 25px;
    background-color: #fff;
-   border-color: yellow;
+   border-color: rgb(0, 140, 255);
    text-transform: uppercase;
    font-weight: bold;
    border-style: solid;
@@ -60,8 +82,9 @@
 }
 .basic-purchase-button button:hover
 {
-   background-color: rgb(179, 179, 61);
+   background-color:  rgb(0, 140, 255);
    border-color: black;
+   color: #fff;
 }
 
 /* preium price */
@@ -75,7 +98,7 @@
    text-align: center;
    font-weight: bolder;
    text-transform: uppercase;
-   border-bottom: 2px solid yellow;
+   border-bottom: 3px solid rgb(17, 147, 199);
    line-height: 0.1em;
    margin: 10px 0px 20px;
 }
@@ -98,7 +121,7 @@
    padding: 20px 40px 20px 40px;
    border-radius: 25px;
    background-color: #fff;
-   border-color: yellow;
+   border-color: rgb(17, 147, 199);
    text-transform: uppercase;
    font-weight: bold;
    border-style: solid;
@@ -106,6 +129,54 @@
 }
 .premium-purchase-button button:hover
 {
-   background-color: rgb(179, 179, 61);
+   background-color: rgb(17, 147, 199);
    border-color: black;
-} 
+   color: white;
+}
+
+/* ultimate price */
+.ultimate-price h1
+{
+   text-align: center;
+   margin-bottom: 70px;
+}
+.ultimate-price h3
+{
+   text-align: center;
+   font-weight: bolder;
+   text-transform: uppercase;
+   border-bottom: 3px solid rgb(12, 56, 121);;
+   line-height: 0.1em;
+   margin: 10px 0px 20px;
+}
+.ultimate-price p 
+{
+   margin-bottom: 15px;
+}
+.ultimate-price h3 span
+{
+   background:#fff; 
+   padding:0 10px; 
+}
+ .ultimate-purchase-button
+{
+  text-align: center;
+}
+.ultimate-purchase-button button
+{
+   margin-top: 30px;
+   padding: 20px 40px 20px 40px;
+   border-radius: 25px;
+   background-color: #fff;
+   border-color: rgb(12, 56, 121);
+   border-style: solid;
+   text-transform: uppercase;
+   font-weight: bold;
+   font-size: 15px;
+}
+.ultimate-purchase-button button:hover
+{
+   background-color: rgb(12, 56, 121);
+   border-color: black;
+   color: #fff;
+}
